@@ -20,11 +20,16 @@
             border-radius: 24px;
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
+            cursor: default;
         }
 
         .soft-card:hover {
             box-shadow: 0 15px 30px -5px rgba(59, 130, 246, 0.1);
             transform: translateY(-2px);
+        }
+
+        .clickable-card {
+            cursor: pointer;
         }
 
         .accent-gradient {
@@ -58,6 +63,7 @@
             </div>
             <div class="hidden md:flex space-x-8 font-semibold text-gray-500">
                 <a href="#about" class="hover:text-blue-500 transition">關於我</a>
+                <a href="#interests" class="hover:text-blue-500 transition">熱愛事物</a>
                 <a href="#education" class="hover:text-blue-500 transition">學習歷程</a>
                 <a href="#homework" class="hover:text-blue-500 transition">作業提交</a>
             </div>
@@ -140,6 +146,40 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 熱愛事物區塊 -->
+        <section id="interests" class="mb-32">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">我熱愛的事情</h2>
+                <p class="text-gray-400">What I Love to Do</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 已更新：影像紀錄卡片連結 -->
+                <a href="https://gemini.google.com/share/12a5492bc4a4" target="_blank" class="soft-card clickable-card p-8 text-center border border-gray-50 group block">
+                    <div class="w-16 h-16 mx-auto mb-6 bg-pink-50 text-pink-400 rounded-2xl flex items-center justify-center text-2xl transition-colors group-hover:bg-pink-400 group-hover:text-white">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3 text-gray-800 group-hover:text-blue-500 transition-colors">影像紀錄 <i class="fas fa-external-link-alt text-xs ml-1 opacity-50"></i></h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">喜歡用鏡頭捕捉生活中的微小瞬間，紀錄那些稍縱即逝的美好與感動。</p>
+                </a>
+                
+                <div class="soft-card p-8 text-center border border-gray-50 group">
+                    <div class="w-16 h-16 mx-auto mb-6 bg-blue-50 text-blue-400 rounded-2xl flex items-center justify-center text-2xl transition-colors group-hover:bg-blue-400 group-hover:text-white">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3 text-gray-800">閱讀與探索</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">沈浸在不同世界的文字裡，開拓視野的同時也讓心靈得到片刻的寧靜。</p>
+                </div>
+                
+                <div class="soft-card p-8 text-center border border-gray-50 group">
+                    <div class="w-16 h-16 mx-auto mb-6 bg-green-50 text-green-400 rounded-2xl flex items-center justify-center text-2xl transition-colors group-hover:bg-green-400 group-hover:text-white">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3 text-gray-800">自然與旅行</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">熱愛在大自然中漫步，透過旅行感受不同城市的脈動，重新找回生活的能量。</p>
                 </div>
             </div>
         </section>
